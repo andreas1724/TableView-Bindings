@@ -4,7 +4,7 @@ Use bindings in a MacOS application.
 
 *Task*: A table should reflect the contents of a `Person`-object. `Person` should be a class consisting of two properties: `firstName: String` and `lastName: String`.
 
-<img src="https://lh3.googleusercontent.com/pw/ACtC-3fdkmPepZzzXf8U-bY-eNwhYIY_Y70K_YagPZSqkFgpRDqLHtPjUWz8OaVklmpiR8gu7-Xp9bvtUhFaJuMlhGdSoaQhuPpm7Q461qHzjkO9Q7WNlDbthSxab0KcEdP6ZET5eKSsPHDRRB5dmu0rxRKB=w1184-h808-no?authuser=0" width=480>
+<img src="https://github.com/andreas1724/TableView-Bindings/blob/master/Screen%20Shot%202020-06-13%20at%2023.15.00.png" width=480>
 
 ---
 
@@ -58,7 +58,7 @@ class ViewController: NSViewController {
 
 * Put a *Table View* into the *View* of *View Controller*.
 * Put an *Array Controller* into the bar above the *View Controller*:
-	<img src="https://lh3.googleusercontent.com/pw/ACtC-3fBwrO5jIAFY5MAl_5IIzdNcyFXLJf3dYqyFIozDGDfIMkr1ug3KXLoArueMoPt1lEpHEnbGBapj_gKszsOY0xrhnsewuKEtlBdgh0thW1tZoQB0YchX57_6hrZ4ylRJvppHxjBnRbrF0_wxCdCrXwz=w1012-h868-no?authuser=0" width=480>
+	<img src="https://github.com/andreas1724/TableView-Bindings/blob/master/Screen%20Shot%202020-06-13%20at%2021.11.00.png" width=480>
 * Use *Bindings Inspector*:
 	* **Array Controller**: *Content Array* ▶︎ *Bind to View Controller*, *Model Key Path*: «self.**employees**»
 	* **Table View**: *Table Content* ▶︎ *Bind to Array Controller*
