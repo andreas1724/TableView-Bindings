@@ -36,7 +36,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.global(qos: .userInteractive).async {
-            let persons = self.loadStaff()
+            let persons = self.loadStaff() // might be time consuming
             DispatchQueue.main.async {
                 self.employees = persons
             }
