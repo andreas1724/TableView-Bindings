@@ -1,13 +1,14 @@
 # TableView-Bindings
-Memo Cocoa Bindings TableView
 
-*Aufgabe*: Erstelle das Modell `Person` – eine Klasse aus Vor- und Nachnamen – die automatisch seinen Inhalt in die Tabelle einträgt.
+Use bindings in a MacOS application.
+
+*Task*: A table should reflect the contents of a `Person`-object. `Person` should be a class consisting of two properties: `firstName: String` and `lastName: String`.
 
 <img src="https://lh3.googleusercontent.com/pw/ACtC-3fdkmPepZzzXf8U-bY-eNwhYIY_Y70K_YagPZSqkFgpRDqLHtPjUWz8OaVklmpiR8gu7-Xp9bvtUhFaJuMlhGdSoaQhuPpm7Q461qHzjkO9Q7WNlDbthSxab0KcEdP6ZET5eKSsPHDRRB5dmu0rxRKB=w1184-h808-no?authuser=0" width=480>
 
-<center><font size=7>⚙︎⚙︎⚙︎</font></center>
+---
 
-*Lösung*:
+*Solution*:
 
 ```swift
 import Foundation
@@ -23,7 +24,7 @@ class Person: NSObject {
 }
 ```
 
-* Notiere die Namen «firstName» und «lastName». Die brauchen wir für die Bindings.
+* Remember «firstName» and «lastName»!
 
 ```swift
 import Cocoa
@@ -51,15 +52,15 @@ class ViewController: NSViewController {
 }
 ```
 
-* Notiere den Namen «employees». Wir brauchen ihn für die Bindings.
+* Remember «employees»!
 
 ---
 
-* Setze ein *Table View* auf das *View* des *View Controllers*.
-* Setze einen *Array Controller* auf die Leiste über dem *View Controller*:
+* Put a *Table View* into the *View* of *View Controller*.
+* Put an *Array Controller* into the bar above the *View Controller*:
 	<img src="https://lh3.googleusercontent.com/pw/ACtC-3fBwrO5jIAFY5MAl_5IIzdNcyFXLJf3dYqyFIozDGDfIMkr1ug3KXLoArueMoPt1lEpHEnbGBapj_gKszsOY0xrhnsewuKEtlBdgh0thW1tZoQB0YchX57_6hrZ4ylRJvppHxjBnRbrF0_wxCdCrXwz=w1012-h868-no?authuser=0" width=480>
-* Im *Bindings Inspector*:
-	* **Array Controller**: *Content Array* ▶︎ *Bind to View Controller*, *Model Key Path*: «self.employees»
+* Use *Bindings Inspector*:
+	* **Array Controller**: *Content Array* ▶︎ *Bind to View Controller*, *Model Key Path*: «self.**employees**»
 	* **Table View**: *Table Content* ▶︎ *Bind to Array Controller*
-	* **1. Table View Cell**: *Value* ▶︎ *Bind to Table Cell View*, *Model Key Path*: «objectValue.firstName»
-	* **2. Table View Cell**: *Value* ▶︎ *Bind to Table Cell View*, *Model Key Path*: «objectValue.lastName»
+	* **1. Table View Cell**: *Value* ▶︎ *Bind to Table Cell View*, *Model Key Path*: «objectValue.**firstName**»
+	* **2. Table View Cell**: *Value* ▶︎ *Bind to Table Cell View*, *Model Key Path*: «objectValue.**lastName**»
