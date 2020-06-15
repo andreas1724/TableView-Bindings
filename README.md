@@ -56,8 +56,8 @@ class ViewController: NSViewController {
 
 ---
 
-* Put a *Table View* into the *View* of *View Controller*.
-* Put an *Array Controller* into the bar above the *View Controller*:
+* Drop a *Table View* onto the *View* of *View Controller*.
+* Drop an *Array Controller* onto the bar above the *View Controller*:
 	<img src="https://github.com/andreas1724/TableView-Bindings/blob/master/Screen%20Shot%202020-06-13%20at%2021.11.00.png" width=480>
 * Use *Bindings Inspector*:
 	* **Array Controller**: *Content Array* ▶︎ *Bind to View Controller*, *Model Key Path*: «self.**employees**»
